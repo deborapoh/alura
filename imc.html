@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function mostrar(param) {
+		document.write(param);
+	}	
+
+	function pularLinha() {
+		document.write("<br>");
+	}
+
+	function calcularIMC(altura, peso) {
+		var imc = peso / (altura * altura);
+		return imc;
+	}
+
+	var peso = prompt("Informe o peso");
+	var altura = prompt("Informe a altura");
+	imcDebora = calcularIMC(altura, peso);
+
+	mostrar((imcDebora - 18.5) + " pontos acima do limite da magreza.");
+
+</script>
